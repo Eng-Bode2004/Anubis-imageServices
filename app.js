@@ -15,3 +15,8 @@ app.use(express.json()); // Middleware to parse JSON
 //  Image Routes //
 ImagesRoutes = require('./Routes/ImagesRoutes');
 app.use('/api/v1/images',ImagesRoutes);
+
+
+
+//npm install --save dotenv express mongoose multer multer-storage-cloudinary nodemon cloudinary@1.41.3
+// |
