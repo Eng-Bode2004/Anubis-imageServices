@@ -9,6 +9,10 @@ const ImagesControllers = require('../Controllers/ImagesControllers');
 const upload = require('../Middlewares/Multer-Users-ProfileImage'); // parser
 router.post('/profile-image', upload.single('image'), ImagesControllers.uploadPhoto);
 
+const posts = require('../Middlewares/Multer-Posts'); // parser
+router.post('/posts', posts.single('image'), ImagesControllers.uploadPhoto);
+
+
 
 
 
